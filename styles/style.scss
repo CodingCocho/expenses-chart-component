@@ -1,0 +1,230 @@
+$red: hsl(10, 79%, 65%);
+$cyan: hsl(186, 34%, 60%); 
+$darkBrown: hsl(25, 47%, 15%);
+$brown: hsl(28, 10%, 53%);
+$cream: hsl(27, 66%, 92%);
+$orange: hsl(33, 100%, 98%);
+$fontSize: 18px;
+$weight1: 400;
+$weight2: 700; 
+$fontFamily: 'DM Sans', sans-serif;
+
+*
+{
+  box-sizing: border-box;
+  font-family: $fontFamily;
+  margin: 0px;
+  padding: 0px;
+}
+
+body
+{
+  background-color: $cream;
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+}
+
+.balance-container
+{
+  align-items: center;
+  background-color: $red;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+  padding: 25px;
+  width: 325px;
+  .balance-column
+  {
+    display: flex;
+    flex-direction: column;
+    .balance-title
+    {
+      color: white;
+      font-size: $fontSize;
+    }
+    .balance-amount
+    {
+      color: white;
+      font-size: 24px;
+      font-weight: $weight2;
+    }
+  }
+}
+
+.chart-container
+{
+  background-color: $orange;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  padding: 25px;
+  width: 325px;
+  .chart-title
+  {
+    color: black;
+    font-size: 24px;
+    font-weight: $weight2;
+  }
+  .chart-bars
+  {
+    align-items: end;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    .bar-container
+    {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 30px;
+      .bar-total
+      {
+        background-color: $orange;
+        border-radius: 5px;
+        color: $orange;
+        font-size: 12px;
+        padding: 5px;
+      }
+      .bar
+      {
+        background-color: $red;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 5px;
+        width: 30px;  
+      }
+      #monday
+      {
+        height: 36px;
+      }
+      #tuesday
+      {
+        height: 76px;
+      }
+      #wednesday
+      {
+        background-color: $cyan;
+        height: 108px;
+      }
+      #thursday
+      {
+        height: 68px;
+      }
+      #friday
+      {
+        height: 42px;
+      }
+      #saturday
+      {
+        height: 90px;
+      }
+      #sunday
+      {
+        height: 50px;
+      }
+    }
+  }
+  .bar-names
+  {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    .bar-name
+    {
+      font-size: 12px;
+      text-align: center;
+      width: 30px;
+    }
+  }
+  .chart-divider
+  {
+    background-color: $brown;
+    border: none;
+    height: 1px;
+    margin-top: 15px;
+  }
+  .chart-summary
+  {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    .summary-column-1
+    {
+      display: flex;
+      flex-direction: column;
+      .summary-text
+      {
+        font-size: 14px;
+      }
+      .monthly-total
+      {
+        font-size: 22px;
+        font-weight: $weight2;
+      }
+    }
+    .summary-column-2
+    {
+      display: flex;
+      flex-direction: column;
+      margin-top: 25px;
+      .monthly-change
+      {
+        font-size: $fontSize;
+        font-weight: $weight2;
+        text-align: right;
+      }
+      .summary-text
+      {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px)
+{
+  .balance-container
+  {
+    width: 750px;
+  }
+  .chart-container
+  {
+    width: 750px;
+    .chart-bars
+    {
+      .bar-container
+      {
+        width: 75px;
+        .bar-total
+        {
+          font-size: $fontSize;
+          padding-bottom: 5px;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 5px;
+          text-align: center;
+          width: 80px;
+        }
+        .bar
+        {
+          width: 75px;
+        }
+      }
+    }
+    .bar-names
+    {
+      .bar-name
+      {
+        width: 75px;
+      }
+    }
+  }
+}
+
+

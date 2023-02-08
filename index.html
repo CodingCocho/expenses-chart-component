@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Expenses chart component</title>
+</head>
+<body>
+
+  <!-- Hold the container for the balance -->
+  <div 
+  class="balance-container"
+  >
+
+    <!-- Hold the column for the balance -->
+    <div 
+    class="balance-column"
+    >
+
+      <!-- Hold the balance title -->
+      <p 
+      class="balance-title"
+      >
+        My balance
+      </p>
+
+      <!-- Hold the balance amount -->
+      <p 
+      class="balance-amount"
+      >
+        $921.48
+      </p>
+    </div>
+
+    <!-- Hold the logo -->
+    <img 
+    alt="logo"
+    class="logo"
+    src="./images/logo.svg" 
+    >
+  </div>
+ 
+  <!-- Hold the chart -->
+  <div 
+  class="chart-container"
+  >
+
+    <!-- Hold the title of the chart -->
+    <p 
+    class="chart-title"
+    >
+      Spending - Last 7 days
+    </p>
+
+    <!-- Hold the chart bars -->
+    <div 
+    class="chart-bars"
+    >
+
+      <!-- Hold the bar container -->
+      <div 
+      class="bar-container"
+      >
+
+        <!-- Hold the day's total -->
+        <div 
+        class="bar-total" 
+        id="monday-total"
+        >
+          $17.45
+        </div>
+        <!-- Bar  -->
+        <div 
+        class="bar" 
+        id="monday"
+        >
+        </div>
+      </div>
+      <div 
+      class="bar-container"
+      >
+        <div 
+        class="bar-total" 
+        id="tuesday-total"
+        >
+          $34.91
+        </div>
+        <div 
+        class="bar" 
+        id="tuesday"
+        >
+        </div>
+      </div>
+      <div 
+      class="bar-container"
+      >
+        <div 
+        class="bar-total" 
+        id="wednesday-total"
+        >
+          $52.36
+        </div>
+        <div 
+        class="bar" 
+        id="wednesday"
+        >
+        </div>
+      </div>
+      <div 
+      class="bar-container"
+      >
+        <div 
+        class="bar-total" 
+        id="thursday-total"
+        >
+          $31.07
+        </div>
+        <div 
+        class="bar" 
+        id="thursday"
+        >
+        </div>
+      </div>
+      <div 
+      class="bar-container"
+      >
+        <div 
+        class="bar-total" 
+        id="friday-total"
+        >
+          $23.39
+        </div>
+        <div 
+        class="bar" 
+        id="friday"
+        >
+        </div>
+      </div>
+      <div 
+      class="bar-container"
+      >
+        <div 
+        class="bar-total" 
+        id="saturday-total"
+        >
+          $43.28
+        </div>
+        <div 
+        class="bar" 
+        id="saturday"
+        >
+        </div>
+      </div>
+      <div 
+      class="bar-container"
+      >
+        <div 
+        class="bar-total" 
+        id="sunday-total"
+        >
+          $25.48
+        </div>
+        <div 
+        class="bar" 
+        id="sunday"
+        >
+        </div>
+      </div>
+    </div>
+
+    <!-- Hold the bar names -->
+    <div 
+    class="bar-names"
+    >
+
+      <!-- Bar name -->
+      <p 
+      class="bar-name"
+      >
+        mon
+      </p>
+      <p 
+      class="bar-name"
+      >
+        tue
+      </p>
+      <p 
+      class="bar-name"
+      >
+        wed
+      </p>
+      <p 
+      class="bar-name"
+      >
+        thu 
+      </p>
+      <p 
+      class="bar-name"
+      >
+        fri
+      </p>
+      <p 
+      class="bar-name"
+      >
+        sat
+      </p>
+      <p 
+      class="bar-name"
+      >
+       sun
+      </p>
+    </div>
+
+    <!-- Chart divider -->
+    <hr
+    class="chart-divider"
+    >
+
+    <!-- Hold the summary of the chart -->
+    <div 
+    class="chart-summary"
+    >
+
+      <!-- Hold the total for the month -->
+      <div 
+      class="summary-column-1"
+      >
+        <p 
+        class="summary-text"
+        >
+          Total this month
+        </p>
+        <p 
+        class="monthly-total"
+        >
+          $478.33
+        </p>
+      </div>
+
+      <!-- Hold the montly change -->
+      <div 
+      class="summary-column-2"
+      >
+        <p 
+        class="monthly-change"
+        >
+          +2.4%
+        </p>
+        <p 
+        class="summary-text"
+        >
+          from last month
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./utilities/main.js"></script>
+</body>
+</html>

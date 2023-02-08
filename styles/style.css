@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: hsl(27deg, 66%, 92%);
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+}
+
+.balance-container {
+  align-items: center;
+  background-color: hsl(10deg, 79%, 65%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+  padding: 25px;
+  width: 325px;
+}
+.balance-container .balance-column {
+  display: flex;
+  flex-direction: column;
+}
+.balance-container .balance-column .balance-title {
+  color: white;
+  font-size: 18px;
+}
+.balance-container .balance-column .balance-amount {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.chart-container {
+  background-color: hsl(33deg, 100%, 98%);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  padding: 25px;
+  width: 325px;
+}
+.chart-container .chart-title {
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+}
+.chart-container .chart-bars {
+  align-items: end;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.chart-container .chart-bars .bar-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+}
+.chart-container .chart-bars .bar-container .bar-total {
+  background-color: hsl(33deg, 100%, 98%);
+  border-radius: 5px;
+  color: hsl(33deg, 100%, 98%);
+  font-size: 12px;
+  padding: 5px;
+}
+.chart-container .chart-bars .bar-container .bar {
+  background-color: hsl(10deg, 79%, 65%);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  width: 30px;
+}
+.chart-container .chart-bars .bar-container #monday {
+  height: 36px;
+}
+.chart-container .chart-bars .bar-container #tuesday {
+  height: 76px;
+}
+.chart-container .chart-bars .bar-container #wednesday {
+  background-color: hsl(186deg, 34%, 60%);
+  height: 108px;
+}
+.chart-container .chart-bars .bar-container #thursday {
+  height: 68px;
+}
+.chart-container .chart-bars .bar-container #friday {
+  height: 42px;
+}
+.chart-container .chart-bars .bar-container #saturday {
+  height: 90px;
+}
+.chart-container .chart-bars .bar-container #sunday {
+  height: 50px;
+}
+.chart-container .bar-names {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.chart-container .bar-names .bar-name {
+  font-size: 12px;
+  text-align: center;
+  width: 30px;
+}
+.chart-container .chart-divider {
+  background-color: hsl(28deg, 10%, 53%);
+  border: none;
+  height: 1px;
+  margin-top: 15px;
+}
+.chart-container .chart-summary {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.chart-container .chart-summary .summary-column-1 {
+  display: flex;
+  flex-direction: column;
+}
+.chart-container .chart-summary .summary-column-1 .summary-text {
+  font-size: 14px;
+}
+.chart-container .chart-summary .summary-column-1 .monthly-total {
+  font-size: 22px;
+  font-weight: 700;
+}
+.chart-container .chart-summary .summary-column-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+.chart-container .chart-summary .summary-column-2 .monthly-change {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: right;
+}
+.chart-container .chart-summary .summary-column-2 .summary-text {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 1440px) {
+  .balance-container {
+    width: 750px;
+  }
+  .chart-container {
+    width: 750px;
+  }
+  .chart-container .chart-bars .bar-container {
+    width: 75px;
+  }
+  .chart-container .chart-bars .bar-container .bar-total {
+    font-size: 18px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    text-align: center;
+    width: 80px;
+  }
+  .chart-container .chart-bars .bar-container .bar {
+    width: 75px;
+  }
+  .chart-container .bar-names .bar-name {
+    width: 75px;
+  }
+}/*# sourceMappingURL=style.css.map */
